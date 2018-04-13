@@ -1,0 +1,43 @@
+﻿@model Sairi.ModuloAsistencia.Models.DocenteViewModel
+
+@{
+    ViewBag.Title = "Asistencia de Docentes";
+    int i = 1;
+}
+
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>N°</th>
+            <th>DNI</th>
+            <th>NOMBRES</th>
+            <th>APELLIDOS</th>
+            <th>CODIGO</th>
+            <th>HORA DE INGRESO</th>
+            <th>HORA DE SALIDA</th>
+            <th>FECHA</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model.ListAsistenciaDocenteByFecha)
+        {
+            <tr class="success">
+                <td>@item.id</td>
+                <td>@item.dni</td>
+                <td>@item.nombres</td>
+                <td>@item.apellidos</td>
+                <td>@item.codigo</td>
+                <td>@item.hora_ingreso</td>
+                <td>@item.hora_salida</td>
+                <td>@item.fecha</td>
+            </tr>
+
+            i++;
+        }
+
+    </tbody>
+
+</table>
+

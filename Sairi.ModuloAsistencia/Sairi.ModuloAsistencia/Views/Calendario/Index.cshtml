@@ -1,0 +1,95 @@
+﻿@model Sairi.ModuloAsistencia.Models.DocenteViewModel
+@{
+    ViewBag.Title = "Calendario";
+}
+
+
+
+
+<script>
+
+  $(document).ready(function() {
+
+    $('#calendar').fullCalendar({
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        //right: 'month,agendaWeek,agendaDay,listWeek',
+        right: 'month'
+      },
+      defaultDate: '2018-03-12',
+      //navLinks: true, // can click day/week names to navigate views
+
+      weekNumbers: true,
+      weekNumbersWithinDays: true,
+      weekNumberCalculation: 'ISO',
+
+      dayClick:function(date,jsEvent,view){
+          console.log("Click en: " + date.format());
+          
+          //var fechaParam = date.format();
+          var fecha = date.format();
+
+          var fechaParam = moment(fecha).format("DD-MM-YYYY");
+
+          var url = "/Docentes/Listar/"+fechaParam;
+
+          window.location.href = url;
+          
+          //$.ajax({
+          //    type: "POST",              
+          //    url: url,
+          //    //data:datos,
+          //    success: function (data) {
+          //        console.log(data.fecha);
+          //    }
+
+
+
+          //})
+
+          //$("#modalList").modal();
+          //$(this).css('background-color','lightblue');
+      },
+
+      editable: true,
+      eventLimit: true, // allow "more" link when too many events
+      
+    });
+
+  });
+
+</script>
+<style>
+    #calendar {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+</style>
+
+<div id='calendar'></div>
+
+
+<div class="modal fade" id="modalList" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="background-color:#401a1a;color:white">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Cambiar estado</h4>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <h4>¿Seguro que desea cambiar el estado de este usuario?</h4>
+                </div>
+            </div>
+            @*<input type="text" name="id" id="txtId"/>*@
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnDelete">Aceptar</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+
+    </div>
+</div>

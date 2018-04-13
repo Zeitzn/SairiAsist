@@ -1,0 +1,10 @@
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.DataAccess\bin\Debug\Sairi.ModuloAsistencia.DataAccess.dll
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.DataAccess\bin\Debug\Sairi.ModuloAsistencia.DataAccess.pdb
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.DataAccess\bin\Debug\Sairi.ModuloAsistencia.DataBase.dll
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.DataAccess\bin\Debug\Sairi.ModuloAsistencia.DataContract.dll
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.DataAccess\bin\Debug\Sairi.ModuloAsistencia.DataBase.pdb
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.DataAccess\bin\Debug\Sairi.ModuloAsistencia.DataContract.pdb
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.DataAccess\bin\Debug\EntityFramework.xml
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.DataAccess\obj\Debug\Sairi.ModuloAsistencia.DataAccess.csprojResolveAssemblyReference.cache
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.DataAccess\obj\Debug\Sairi.ModuloAsistencia.DataAccess.dll
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.DataAccess\obj\Debug\Sairi.ModuloAsistencia.DataAccess.pdb

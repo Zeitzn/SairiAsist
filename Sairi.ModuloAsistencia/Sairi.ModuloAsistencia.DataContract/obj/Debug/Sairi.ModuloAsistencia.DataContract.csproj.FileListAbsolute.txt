@@ -1,0 +1,5 @@
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.DataContract\bin\Debug\Sairi.ModuloAsistencia.DataContract.dll
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.DataContract\bin\Debug\Sairi.ModuloAsistencia.DataContract.pdb
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.DataContract\obj\Debug\Sairi.ModuloAsistencia.DataContract.csprojResolveAssemblyReference.cache
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.DataContract\obj\Debug\Sairi.ModuloAsistencia.DataContract.dll
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.DataContract\obj\Debug\Sairi.ModuloAsistencia.DataContract.pdb

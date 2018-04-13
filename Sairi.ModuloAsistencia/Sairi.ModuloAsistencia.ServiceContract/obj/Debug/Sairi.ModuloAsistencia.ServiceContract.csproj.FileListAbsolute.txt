@@ -1,0 +1,16 @@
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.ServiceContract\bin\Debug\Sairi.ModuloAsistencia.ServiceContract.dll.config
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.ServiceContract\bin\Debug\Sairi.ModuloAsistencia.ServiceContract.dll
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.ServiceContract\bin\Debug\Sairi.ModuloAsistencia.ServiceContract.pdb
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.ServiceContract\bin\Debug\Sairi.ModuloAsistencia.BussinesLogic.dll
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.ServiceContract\bin\Debug\Sairi.ModuloAsistencia.DataContract.dll
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.ServiceContract\bin\Debug\Sairi.ModuloAsistencia.DataAccess.dll
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.ServiceContract\bin\Debug\Sairi.ModuloAsistencia.DataBase.dll
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.ServiceContract\bin\Debug\EntityFramework.dll
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.ServiceContract\bin\Debug\Sairi.ModuloAsistencia.BussinesLogic.pdb
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.ServiceContract\bin\Debug\Sairi.ModuloAsistencia.DataContract.pdb
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.ServiceContract\bin\Debug\Sairi.ModuloAsistencia.DataAccess.pdb
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.ServiceContract\bin\Debug\Sairi.ModuloAsistencia.DataBase.pdb
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.ServiceContract\bin\Debug\EntityFramework.xml
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.ServiceContract\obj\Debug\Sairi.ModuloAsistencia.ServiceContract.csprojResolveAssemblyReference.cache
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.ServiceContract\obj\Debug\Sairi.ModuloAsistencia.ServiceContract.dll
+D:\Projects\C#\IESairi\Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.ServiceContract\obj\Debug\Sairi.ModuloAsistencia.ServiceContract.pdb

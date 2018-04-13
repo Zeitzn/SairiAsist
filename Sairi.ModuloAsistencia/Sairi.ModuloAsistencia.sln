@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sairi.ModuloAsistencia", "Sairi.ModuloAsistencia\Sairi.ModuloAsistencia.csproj", "{8BD7140A-E1C4-4E71-B11A-E2A36937AA47}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B5F9550E-1AAD-4F53-B9BA-1FFA298B07B6} = {B5F9550E-1AAD-4F53-B9BA-1FFA298B07B6}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{8CEC4AAB-729E-47D9-A802-03922589E579}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{1E3FC406-58FF-49A8-BB81-CC3CB9F2A0BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{D42DCCBE-7858-4DDB-AC83-7E1AC5826B16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{D022A65E-41B7-424D-BD8C-DCA582DD8D84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BussinesLogic", "BussinesLogic", "{3727EABD-249C-4A63-8F58-8F8C679D692D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataContract", "DataContract", "{7664C221-8FCB-4540-B651-6EA6FE5AA6F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceContract", "ServiceContract", "{94CC372D-09C4-4479-946C-687E4A5D869C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sairi.ModuloAsistencia.DataBase", "Sairi.ModuloAsistencia.DataBase\Sairi.ModuloAsistencia.DataBase.csproj", "{0358C936-A0F5-4A48-BD8E-0DDE504F6358}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sairi.ModuloAsistencia.DataContract", "Sairi.ModuloAsistencia.DataContract\Sairi.ModuloAsistencia.DataContract.csproj", "{4C99374B-A46B-4F6D-8682-E0ED455AD8F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sairi.ModuloAsistencia.DataAccess", "Sairi.ModuloAsistencia.DataAccess\Sairi.ModuloAsistencia.DataAccess.csproj", "{BF711457-5C59-4015-9A2F-B6B5E74B3B84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sairi.ModuloAsistencia.BussinesLogic", "Sairi.ModuloAsistencia.BussinesLogic\Sairi.ModuloAsistencia.BussinesLogic.csproj", "{1F4818B3-94E5-469F-901C-82FD739690A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sairi.ModuloAsistencia.ServiceContract", "Sairi.ModuloAsistencia.ServiceContract\Sairi.ModuloAsistencia.ServiceContract.csproj", "{B5F9550E-1AAD-4F53-B9BA-1FFA298B07B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BD7140A-E1C4-4E71-B11A-E2A36937AA47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD7140A-E1C4-4E71-B11A-E2A36937AA47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD7140A-E1C4-4E71-B11A-E2A36937AA47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD7140A-E1C4-4E71-B11A-E2A36937AA47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0358C936-A0F5-4A48-BD8E-0DDE504F6358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0358C936-A0F5-4A48-BD8E-0DDE504F6358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0358C936-A0F5-4A48-BD8E-0DDE504F6358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0358C936-A0F5-4A48-BD8E-0DDE504F6358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C99374B-A46B-4F6D-8682-E0ED455AD8F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C99374B-A46B-4F6D-8682-E0ED455AD8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C99374B-A46B-4F6D-8682-E0ED455AD8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C99374B-A46B-4F6D-8682-E0ED455AD8F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF711457-5C59-4015-9A2F-B6B5E74B3B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF711457-5C59-4015-9A2F-B6B5E74B3B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF711457-5C59-4015-9A2F-B6B5E74B3B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF711457-5C59-4015-9A2F-B6B5E74B3B84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F4818B3-94E5-469F-901C-82FD739690A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F4818B3-94E5-469F-901C-82FD739690A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F4818B3-94E5-469F-901C-82FD739690A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F4818B3-94E5-469F-901C-82FD739690A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5F9550E-1AAD-4F53-B9BA-1FFA298B07B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5F9550E-1AAD-4F53-B9BA-1FFA298B07B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5F9550E-1AAD-4F53-B9BA-1FFA298B07B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F9550E-1AAD-4F53-B9BA-1FFA298B07B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8BD7140A-E1C4-4E71-B11A-E2A36937AA47} = {8CEC4AAB-729E-47D9-A802-03922589E579}
+		{D42DCCBE-7858-4DDB-AC83-7E1AC5826B16} = {1E3FC406-58FF-49A8-BB81-CC3CB9F2A0BB}
+		{D022A65E-41B7-424D-BD8C-DCA582DD8D84} = {1E3FC406-58FF-49A8-BB81-CC3CB9F2A0BB}
+		{3727EABD-249C-4A63-8F58-8F8C679D692D} = {1E3FC406-58FF-49A8-BB81-CC3CB9F2A0BB}
+		{7664C221-8FCB-4540-B651-6EA6FE5AA6F4} = {1E3FC406-58FF-49A8-BB81-CC3CB9F2A0BB}
+		{94CC372D-09C4-4479-946C-687E4A5D869C} = {1E3FC406-58FF-49A8-BB81-CC3CB9F2A0BB}
+		{0358C936-A0F5-4A48-BD8E-0DDE504F6358} = {D022A65E-41B7-424D-BD8C-DCA582DD8D84}
+		{4C99374B-A46B-4F6D-8682-E0ED455AD8F2} = {7664C221-8FCB-4540-B651-6EA6FE5AA6F4}
+		{BF711457-5C59-4015-9A2F-B6B5E74B3B84} = {D42DCCBE-7858-4DDB-AC83-7E1AC5826B16}
+		{1F4818B3-94E5-469F-901C-82FD739690A0} = {3727EABD-249C-4A63-8F58-8F8C679D692D}
+		{B5F9550E-1AAD-4F53-B9BA-1FFA298B07B6} = {94CC372D-09C4-4479-946C-687E4A5D869C}
+	EndGlobalSection
+EndGlobal

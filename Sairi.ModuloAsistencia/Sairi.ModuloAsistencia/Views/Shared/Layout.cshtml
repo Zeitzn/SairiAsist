@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+
+    
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css" /> 
+
+    <link href="~/assets/css/global.css" rel="stylesheet" />
+
+    @* TEMPLATE *@
+
+    <link rel="stylesheet" href="~/assets/template/dist/css/AdminLTE.min.css">
+
+    <link rel="stylesheet" href="~/assets/template/dist/css/skins/_all-skins.min.css">
+    @* ---TEMPLATE-- *@
+
+    @*<script src="~/assets/js/jquery.min.js"></script>*@
+    @*<script src="~/assets/js/jquery.validate.min.js"></script>*@
+    @*<script src="~/assets/js/jquery.validate.unobtrusive.min.js"></script>*@
+    
+
+    <link href="~/assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    @*---FULL CALENDAR---*@
+   
+
+    <link href="~/assets/fullcalendar/fullcalendar.min.css" rel="stylesheet" />
+
+
+    <link href="~/assets/fullcalendar/fullcalendar.min.css" rel="stylesheet" media="print" />
+
+
+    <script src="~/assets/fullcalendar/lib/moment.min.js"></script>
+
+
+    <script src="~/assets/fullcalendar/lib/jquery.min.js"></script>
+
+
+    <script src="~/assets/fullcalendar/fullcalendar.min.js"></script>
+    <script src="~/assets/fullcalendar/locale/es.js"></script>
+    @*@RenderSection("FullCalendar", false)*@
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+
+        <header class="main-header">
+            <!-- Logo -->
+
+            <a href="" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini">@*<img src="<?php echo $url ?>views/assets/images/logo-min.png">*@</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg">@*<img src="~/assets/images/logo-midis.png">*@<img src="~/assets/images/tradicion.png" /></span>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- User Account: style can be found in dropdown.less -->
+                        <li class="dropdown user user-menu ">
+                            <a href="~/Seguridad/account/LogOut">
+                                <!--<img src="<?php echo $url ?>views/assets/images/close_adapter.png" class="user-image" alt="User Image">-->
+                                <span class="hidden-xs">Cerrar Sesión <i class="glyphicon glyphicon-log-out"></i></span>
+                            </a>
+
+                            @*@Html.ActionLink("Cerrar Sesión","LogOut","Account",null,null)*@
+
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        @Html.Partial("_PartialMenu")
+
+
+
+        @* MAIN CONTENT*@
+
+      
+        <div class="content-wrapper" >
+
+            @Html.Partial("_PartialBreadCrumb")
+            
+
+            <section class="content" style="background-color:cadetblue">
+
+                <!-- Default box -->
+                <div class="box" >
+
+                    
+                    <div class="box-body table-responsive" >
+
+                       @RenderBody()
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        @*----END MAIN CONTENT----*@
+
+
+
+        @Html.Partial("_PartialFooter")
+
+        <div class="control-sidebar-bg"></div>
+    </div>
+
+
+    <script src="~/assets/template/dist/js/adminlte.min.js"></script>
+
+    @*<script src="~/assets/template/dist/js/demo.js"></script>*@
+   
+    @*<script>
+        $(document).ready(function () {
+            $('.sidebar-menu').tree()
+        })
+    </script>*@
+
+    <script src="~/assets/js/bootstrap.min.js"></script>
+
+   
+    @*@RenderSection("UsuarioScripts", false)*@
+
+
+</body>
+</html>

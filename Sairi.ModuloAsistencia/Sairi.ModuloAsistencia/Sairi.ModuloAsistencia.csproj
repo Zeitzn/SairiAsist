@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8BD7140A-E1C4-4E71-B11A-E2A36937AA47}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sairi.ModuloAsistencia</RootNamespace>
+    <AssemblyName>Sairi.ModuloAsistencia</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\bootstrap-responsive.css" />
+    <Content Include="assets\css\bootstrap-theme.css" />
+    <Content Include="assets\css\bootstrap-theme.min.css" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\bootstrap.edited.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\fancybox\blank.gif" />
+    <Content Include="assets\css\fancybox\fancybox_loading.gif" />
+    <Content Include="assets\css\fancybox\fancybox_overlay.png" />
+    <Content Include="assets\css\fancybox\fancybox_sprite.png" />
+    <Content Include="assets\css\fancybox\jquery.fancybox.css" />
+    <Content Include="assets\css\global.css" />
+    <Content Include="assets\css\icomoon\icomoon.svg" />
+    <Content Include="assets\css\login.css" />
+    <Content Include="assets\css\login\AdminLTE.min.css" />
+    <Content Include="assets\css\login\loginStyle.css" />
+    <Content Include="assets\fonts\font-awesome\css\font-awesome.css" />
+    <Content Include="assets\fonts\font-awesome\css\font-awesome.min.css" />
+    <Content Include="assets\fonts\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\fullcalendar\CHANGELOG.txt" />
+    <Content Include="assets\fullcalendar\CONTRIBUTING.txt" />
+    <Content Include="assets\fullcalendar\fullcalendar.css" />
+    <Content Include="assets\fullcalendar\fullcalendar.js" />
+    <Content Include="assets\fullcalendar\fullcalendar.min.css" />
+    <Content Include="assets\fullcalendar\fullcalendar.min.js" />
+    <Content Include="assets\fullcalendar\fullcalendar.print.css" />
+    <Content Include="assets\fullcalendar\fullcalendar.print.min.css" />
+    <Content Include="assets\fullcalendar\gcal.js" />
+    <Content Include="assets\fullcalendar\gcal.min.js" />
+    <Content Include="assets\fullcalendar\lib\jquery-ui.min.js" />
+    <Content Include="assets\fullcalendar\lib\jquery.min.js" />
+    <Content Include="assets\fullcalendar\lib\moment.min.js" />
+    <Content Include="assets\fullcalendar\LICENSE.txt" />
+    <Content Include="assets\fullcalendar\locale-all.js" />
+    <Content Include="assets\fullcalendar\locale\af.js" />
+    <Content Include="assets\fullcalendar\locale\ar-dz.js" />
+    <Content Include="assets\fullcalendar\locale\ar-kw.js" />
+    <Content Include="assets\fullcalendar\locale\ar-ly.js" />
+    <Content Include="assets\fullcalendar\locale\ar-ma.js" />
+    <Content Include="assets\fullcalendar\locale\ar-sa.js" />
+    <Content Include="assets\fullcalendar\locale\ar-tn.js" />
+    <Content Include="assets\fullcalendar\locale\ar.js" />
+    <Content Include="assets\fullcalendar\locale\bg.js" />
+    <Content Include="assets\fullcalendar\locale\bs.js" />
+    <Content Include="assets\fullcalendar\locale\ca.js" />
+    <Content Include="assets\fullcalendar\locale\cs.js" />
+    <Content Include="assets\fullcalendar\locale\da.js" />
+    <Content Include="assets\fullcalendar\locale\de-at.js" />
+    <Content Include="assets\fullcalendar\locale\de-ch.js" />
+    <Content Include="assets\fullcalendar\locale\de.js" />
+    <Content Include="assets\fullcalendar\locale\el.js" />
+    <Content Include="assets\fullcalendar\locale\en-au.js" />
+    <Content Include="assets\fullcalendar\locale\en-ca.js" />
+    <Content Include="assets\fullcalendar\locale\en-gb.js" />
+    <Content Include="assets\fullcalendar\locale\en-ie.js" />
+    <Content Include="assets\fullcalendar\locale\en-nz.js" />
+    <Content Include="assets\fullcalendar\locale\es-do.js" />
+    <Content Include="assets\fullcalendar\locale\es-us.js" />
+    <Content Include="assets\fullcalendar\locale\es.js" />
+    <Content Include="assets\fullcalendar\locale\et.js" />
+    <Content Include="assets\fullcalendar\locale\eu.js" />
+    <Content Include="assets\fullcalendar\locale\fa.js" />
+    <Content Include="assets\fullcalendar\locale\fi.js" />
+    <Content Include="assets\fullcalendar\locale\fr-ca.js" />
+    <Content Include="assets\fullcalendar\locale\fr-ch.js" />
+    <Content Include="assets\fullcalendar\locale\fr.js" />
+    <Content Include="assets\fullcalendar\locale\gl.js" />
+    <Content Include="assets\fullcalendar\locale\he.js" />
+    <Content Include="assets\fullcalendar\locale\hi.js" />
+    <Content Include="assets\fullcalendar\locale\hr.js" />
+    <Content Include="assets\fullcalendar\locale\hu.js" />
+    <Content Include="assets\fullcalendar\locale\id.js" />
+    <Content Include="assets\fullcalendar\locale\is.js" />
+    <Content Include="assets\fullcalendar\locale\it.js" />
+    <Content Include="assets\fullcalendar\locale\ja.js" />
+    <Content Include="assets\fullcalendar\locale\ka.js" />
+    <Content Include="assets\fullcalendar\locale\kk.js" />
+    <Content Include="assets\fullcalendar\locale\ko.js" />
+    <Content Include="assets\fullcalendar\locale\lb.js" />
+    <Content Include="assets\fullcalendar\locale\lt.js" />
+    <Content Include="assets\fullcalendar\locale\lv.js" />
+    <Content Include="assets\fullcalendar\locale\mk.js" />
+    <Content Include="assets\fullcalendar\locale\ms-my.js" />
+    <Content Include="assets\fullcalendar\locale\ms.js" />
+    <Content Include="assets\fullcalendar\locale\nb.js" />
+    <Content Include="assets\fullcalendar\locale\nl-be.js" />
+    <Content Include="assets\fullcalendar\locale\nl.js" />
+    <Content Include="assets\fullcalendar\locale\nn.js" />
+    <Content Include="assets\fullcalendar\locale\pl.js" />
+    <Content Include="assets\fullcalendar\locale\pt-br.js" />
+    <Content Include="assets\fullcalendar\locale\pt.js" />
+    <Content Include="assets\fullcalendar\locale\ro.js" />
+    <Content Include="assets\fullcalendar\locale\ru.js" />
+    <Content Include="assets\fullcalendar\locale\sk.js" />
+    <Content Include="assets\fullcalendar\locale\sl.js" />
+    <Content Include="assets\fullcalendar\locale\sq.js" />
+    <Content Include="assets\fullcalendar\locale\sr-cyrl.js" />
+    <Content Include="assets\fullcalendar\locale\sr.js" />
+    <Content Include="assets\fullcalendar\locale\sv.js" />
+    <Content Include="assets\fullcalendar\locale\th.js" />
+    <Content Include="assets\fullcalendar\locale\tr.js" />
+    <Content Include="assets\fullcalendar\locale\uk.js" />
+    <Content Include="assets\fullcalendar\locale\vi.js" />
+    <Content Include="assets\fullcalendar\locale\zh-cn.js" />
+    <Content Include="assets\fullcalendar\locale\zh-tw.js" />
+    <Content Include="assets\fullcalendar\scheduler.min.css" />
+    <Content Include="assets\fullcalendar\scheduler.min.js" />
+    <Content Include="assets\images\Adjuntar.png" />
+    <Content Include="assets\images\Agregar.png" />
+    <Content Include="assets\images\Archivo.png" />
+    <Content Include="assets\images\Asignar.png" />
+    <Content Include="assets\images\Atender.png" />
+    <Content Include="assets\images\avatar1.png" />
+    <Content Include="assets\images\avatar2.png" />
+    <Content Include="assets\images\background.png" />
+    <Content Include="assets\images\Buscar.png" />
+    <Content Include="assets\images\calendar.gif" />
+    <Content Include="assets\images\Cancelar.png" />
+    <Content Include="assets\images\cargando.gif" />
+    <Content Include="assets\images\Cerrar.png" />
+    <Content Include="assets\images\checked.png" />
+    <Content Include="assets\images\Clasificar.png" />
+    <Content Include="assets\images\Close.gif" />
+    <Content Include="assets\images\Consultar.png" />
+    <Content Include="assets\images\custom_b.png" />
+    <Content Include="assets\images\custom_bl.png" />
+    <Content Include="assets\images\custom_br.png" />
+    <Content Include="assets\images\custom_l.png" />
+    <Content Include="assets\images\custom_r.png" />
+    <Content Include="assets\images\custom_t.png" />
+    <Content Include="assets\images\custom_tl.png" />
+    <Content Include="assets\images\custom_tr.png" />
+    <Content Include="assets\images\DarConformidad.png" />
+    <Content Include="assets\images\DarNoConformidad.png" />
+    <Content Include="assets\images\datepicker_b.png" />
+    <Content Include="assets\images\datepicker_bl.png" />
+    <Content Include="assets\images\datepicker_br.png" />
+    <Content Include="assets\images\datepicker_l.png" />
+    <Content Include="assets\images\datepicker_r.png" />
+    <Content Include="assets\images\datepicker_t.png" />
+    <Content Include="assets\images\datepicker_tl.png" />
+    <Content Include="assets\images\datepicker_tr.png" />
+    <Content Include="assets\images\delete.png" />
+    <Content Include="assets\images\down_arrow_select.jpg" />
+    <Content Include="assets\images\Email.gif" />
+    <Content Include="assets\images\error.png" />
+    <Content Include="assets\images\female.png" />
+    <Content Include="assets\images\field.png" />
+    <Content Include="assets\images\FlechaDerecha.png" />
+    <Content Include="assets\images\FlechaIzquierda.png" />
+    <Content Include="assets\images\Grabar.png" />
+    <Content Include="assets\images\icon-arrow.gif" />
+    <Content Include="assets\images\icon-ok.gif" />
+    <Content Include="assets\images\icon_search16.png" />
+    <Content Include="assets\images\Info.png" />
+    <Content Include="assets\images\Iniciar.png" />
+    <Content Include="assets\images\Limpiar.png" />
+    <Content Include="assets\images\loading.gif" />
+    <Content Include="assets\images\logo-buenavista.png" />
+    <Content Include="assets\images\logo-midis.jpg" />
+    <Content Include="assets\images\logo-midis.png" />
+    <Content Include="assets\images\logo-qaliwarma.png" />
+    <Content Include="assets\images\logo-qw.png" />
+    <Content Include="assets\images\LogoFoncodes.png" />
+    <Content Include="assets\images\LogoMidis.png" />
+    <Content Include="assets\images\LogoReporte.jpg" />
+    <Content Include="assets\images\male.png" />
+    <Content Include="assets\images\ModuloConfiguracionSAP.png" />
+    <Content Include="assets\images\msDropDown.gif" />
+    <Content Include="assets\images\Nuevo.png" />
+    <Content Include="assets\images\pan_adjuntar.png" />
+    <Content Include="assets\images\pan_borrar.gif" />
+    <Content Include="assets\images\pan_buscar.png" />
+    <Content Include="assets\images\pan_detalle.gif" />
+    <Content Include="assets\images\pan_editar.gif" />
+    <Content Include="assets\images\pan_enlace.png" />
+    <Content Include="assets\images\pan_filtrar.png" />
+    <Content Include="assets\images\pan_pdf.png" />
+    <Content Include="assets\images\Persona.png" />
+    <Content Include="assets\images\personaje.png" />
+    <Content Include="assets\images\Question.png" />
+    <Content Include="assets\images\Role.png" />
+    <Content Include="assets\images\Security.png" />
+    <Content Include="assets\images\separador.png" />
+    <Content Include="assets\images\Sesion.jpg" />
+    <Content Include="assets\images\stop.png" />
+    <Content Include="assets\images\textboxbg.png" />
+    <Content Include="assets\images\tradicion.png" />
+    <Content Include="assets\images\unchecked.png" />
+    <Content Include="assets\images\Upload.png" />
+    <Content Include="assets\images\User.png" />
+    <Content Include="assets\images\warning-orange.png" />
+    <Content Include="assets\images\warning-red.png" />
+    <Content Include="assets\images\warning.png" />
+    <Content Include="assets\js\bootstrap.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\fonts\font-awesome\.bower.json" />
+    <Content Include="assets\fonts\font-awesome\.gitignore" />
+    <Content Include="assets\fonts\font-awesome\.npmignore" />
+    <Content Include="assets\fonts\font-awesome\bower.json" />
+    <Content Include="assets\fonts\font-awesome\css\font-awesome.css.map" />
+    <Content Include="assets\fonts\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\font-awesome\less\animated.less" />
+    <Content Include="assets\fonts\font-awesome\less\bordered-pulled.less" />
+    <Content Include="assets\fonts\font-awesome\less\core.less" />
+    <Content Include="assets\fonts\font-awesome\less\fixed-width.less" />
+    <Content Include="assets\fonts\font-awesome\less\font-awesome.less" />
+    <Content Include="assets\fonts\font-awesome\less\icons.less" />
+    <Content Include="assets\fonts\font-awesome\less\larger.less" />
+    <Content Include="assets\fonts\font-awesome\less\list.less" />
+    <Content Include="assets\fonts\font-awesome\less\mixins.less" />
+    <Content Include="assets\fonts\font-awesome\less\path.less" />
+    <Content Include="assets\fonts\font-awesome\less\rotated-flipped.less" />
+    <Content Include="assets\fonts\font-awesome\less\screen-reader.less" />
+    <Content Include="assets\fonts\font-awesome\less\stacked.less" />
+    <Content Include="assets\fonts\font-awesome\less\variables.less" />
+    <Content Include="assets\fonts\font-awesome\scss\font-awesome.scss" />
+    <Content Include="assets\fonts\font-awesome\scss\_animated.scss" />
+    <Content Include="assets\fonts\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="assets\fonts\font-awesome\scss\_core.scss" />
+    <Content Include="assets\fonts\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="assets\fonts\font-awesome\scss\_icons.scss" />
+    <Content Include="assets\fonts\font-awesome\scss\_larger.scss" />
+    <Content Include="assets\fonts\font-awesome\scss\_list.scss" />
+    <Content Include="assets\fonts\font-awesome\scss\_mixins.scss" />
+    <Content Include="assets\fonts\font-awesome\scss\_path.scss" />
+    <Content Include="assets\fonts\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="assets\fonts\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="assets\fonts\font-awesome\scss\_stacked.scss" />
+    <Content Include="assets\fonts\font-awesome\scss\_variables.scss" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="assets\js\jquery-1.10.2.intellisense.js" />
+    <Content Include="assets\js\jquery-1.11.0.js" />
+    <Content Include="assets\js\jquery-3.2.1.min.js" />
+    <Content Include="assets\js\jquery-ui-1.11.1.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\jquery.unobtrusive-ajax.js" />
+    <Content Include="assets\js\jquery.unobtrusive-ajax.min.js" />
+    <None Include="assets\js\jquery.validate-vsdoc.js" />
+    <Content Include="assets\js\jquery.validate.js" />
+    <Content Include="assets\js\jquery.validate.min.js" />
+    <Content Include="assets\js\jquery.validate.unobtrusive.js" />
+    <Content Include="assets\js\jquery.validate.unobtrusive.min.js" />
+    <Content Include="assets\js\knockout-2.2.0.debug.js" />
+    <Content Include="assets\js\knockout-2.2.0.js" />
+    <Content Include="assets\js\modernizr-2.6.2.js" />
+    <Content Include="assets\js\npm.js" />
+    <Content Include="assets\template\dist\css\AdminLTE.css" />
+    <Content Include="assets\template\dist\css\AdminLTE.min.css" />
+    <Content Include="assets\template\dist\css\alt\AdminLTE-bootstrap-social.css" />
+    <Content Include="assets\template\dist\css\alt\AdminLTE-bootstrap-social.min.css" />
+    <Content Include="assets\template\dist\css\alt\AdminLTE-fullcalendar.css" />
+    <Content Include="assets\template\dist\css\alt\AdminLTE-fullcalendar.min.css" />
+    <Content Include="assets\template\dist\css\alt\AdminLTE-select2.css" />
+    <Content Include="assets\template\dist\css\alt\AdminLTE-select2.min.css" />
+    <Content Include="assets\template\dist\css\alt\AdminLTE-without-plugins.css" />
+    <Content Include="assets\template\dist\css\alt\AdminLTE-without-plugins.min.css" />
+    <Content Include="assets\template\dist\css\skins\skin-black-light.css" />
+    <Content Include="assets\template\dist\css\skins\skin-black-light.min.css" />
+    <Content Include="assets\template\dist\css\skins\skin-black.css" />
+    <Content Include="assets\template\dist\css\skins\skin-black.min.css" />
+    <Content Include="assets\template\dist\css\skins\skin-blue-light.css" />
+    <Content Include="assets\template\dist\css\skins\skin-blue-light.min.css" />
+    <Content Include="assets\template\dist\css\skins\skin-blue.css" />
+    <Content Include="assets\template\dist\css\skins\skin-blue.min.css" />
+    <Content Include="assets\template\dist\css\skins\skin-green-light.css" />
+    <Content Include="assets\template\dist\css\skins\skin-green-light.min.css" />
+    <Content Include="assets\template\dist\css\skins\skin-green.css" />
+    <Content Include="assets\template\dist\css\skins\skin-green.min.css" />
+    <Content Include="assets\template\dist\css\skins\skin-purple-light.css" />
+    <Content Include="assets\template\dist\css\skins\skin-purple-light.min.css" />
+    <Content Include="assets\template\dist\css\skins\skin-purple.css" />
+    <Content Include="assets\template\dist\css\skins\skin-purple.min.css" />
+    <Content Include="assets\template\dist\css\skins\skin-red-light.css" />
+    <Content Include="assets\template\dist\css\skins\skin-red-light.min.css" />
+    <Content Include="assets\template\dist\css\skins\skin-red.css" />
+    <Content Include="assets\template\dist\css\skins\skin-red.min.css" />
+    <Content Include="assets\template\dist\css\skins\skin-yellow-light.css" />
+    <Content Include="assets\template\dist\css\skins\skin-yellow-light.min.css" />
+    <Content Include="assets\template\dist\css\skins\skin-yellow.css" />
+    <Content Include="assets\template\dist\css\skins\skin-yellow.min.css" />
+    <Content Include="assets\template\dist\css\skins\_all-skins.css" />
+    <Content Include="assets\template\dist\css\skins\_all-skins.min.css" />
+    <Content Include="assets\template\dist\js\adminlte.js" />
+    <Content Include="assets\template\dist\js\adminlte.min.js" />
+    <Content Include="assets\template\dist\js\demo.js" />
+    <Content Include="assets\template\dist\js\pages\dashboard.js" />
+    <Content Include="assets\template\dist\js\pages\dashboard2.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Properties\DataSources\Sairi.ModuloAsistencia.DataContract.AsistenciaDocenteResponse.datasource" />
+    <Content Include="Areas\Seguridad\Views\web.config" />
+    <Content Include="Areas\Seguridad\Views\Account\Login.cshtml" />
+    <Content Include="assets\css\bootstrap-theme.css.map" />
+    <Content Include="assets\css\bootstrap-theme.min.css.map" />
+    <Content Include="assets\css\bootstrap.css.map" />
+    <Content Include="assets\css\bootstrap.min.css.map" />
+    <Content Include="assets\css\icomoon\icomoon.eot" />
+    <Content Include="assets\css\icomoon\icomoon.ttf" />
+    <Content Include="assets\css\icomoon\icomoon.woff" />
+    <Content Include="assets\images\Thumbs.db" />
+    <Content Include="assets\template\dist\css\adminlte.css.map" />
+    <Content Include="assets\template\dist\css\adminlte.min.css.map" />
+    <Content Include="Properties\DataSources\Sairi.ModuloAsistencia.DataContract.AsistenciaEstudianteResponse.datasource" />
+    <Content Include="Web.config" />
+    <Content Include="Views\Docentes\Index.cshtml" />
+    <Content Include="Views\Shared\_PartialBreadCrumb.cshtml" />
+    <Content Include="Views\Shared\_PartialFooter.cshtml" />
+    <Content Include="Views\Shared\_PartialMenu.cshtml" />
+    <Content Include="Views\Estudiantes\Index.cshtml" />
+    <Content Include="Views\Calendario\Index.cshtml" />
+    <Content Include="Views\Docentes\Listar.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Seguridad\Controllers\AccountController.cs" />
+    <Compile Include="Areas\Seguridad\SeguridadAreaRegistration.cs" />
+    <Compile Include="Controllers\CalendarioController.cs" />
+    <Compile Include="Controllers\DocentesController.cs" />
+    <Compile Include="Controllers\EstudiantesController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EstudianteViewModel.cs" />
+    <Compile Include="Models\DocenteViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\_Viewstart.cshtml" />
+    <Content Include="Views\Shared\Layout.cshtml" />
+    <Content Include="bd_sairiDataSet.xsc">
+      <DependentUpon>bd_sairiDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="bd_sairiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="bd_sairiDataSet.xss">
+      <DependentUpon>bd_sairiDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Seguridad\Models\" />
+    <Folder Include="Areas\Seguridad\Views\Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sairi.ModuloAsistencia.BussinesLogic\Sairi.ModuloAsistencia.BussinesLogic.csproj">
+      <Project>{1F4818B3-94E5-469F-901C-82FD739690A0}</Project>
+      <Name>Sairi.ModuloAsistencia.BussinesLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sairi.ModuloAsistencia.DataAccess\Sairi.ModuloAsistencia.DataAccess.csproj">
+      <Project>{BF711457-5C59-4015-9A2F-B6B5E74B3B84}</Project>
+      <Name>Sairi.ModuloAsistencia.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sairi.ModuloAsistencia.DataBase\Sairi.ModuloAsistencia.DataBase.csproj">
+      <Project>{0358c936-a0f5-4a48-bd8e-0dde504f6358}</Project>
+      <Name>Sairi.ModuloAsistencia.DataBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sairi.ModuloAsistencia.DataContract\Sairi.ModuloAsistencia.DataContract.csproj">
+      <Project>{4C99374B-A46B-4F6D-8682-E0ED455AD8F2}</Project>
+      <Name>Sairi.ModuloAsistencia.DataContract</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\asistencia_estudiantes_aula.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53638</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8081/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

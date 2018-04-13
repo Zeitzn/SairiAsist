@@ -1,0 +1,68 @@
+﻿@model Sairi.ModuloAsistencia.Models.EstudianteViewModel
+
+@{
+    ViewBag.Title = "Asistencia de Estudiantes";
+    int i = 1;
+}
+
+
+<div class="well">
+    <h5><b>Búsqueda <span class="glyphicon glyphicon-search"></span></b></h5>
+    <form class="small">
+        <div class="form-group col-sm-6">
+            <label>Código:</label>
+            <input type="text" placeholder="Código" class="form-control" />
+        </div>
+
+        <div class="form-group col-sm-6">
+            <label>Fecha:</label>
+            <input type="date" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary btn-xs" id="txtUsuario" value="Buscar">
+
+            <input type="button" class="btn btn-danger btn-xs" value="Limpiar" />
+
+            <a class="btn btn-primary btn-xs glyphicon glyphicon-save"></a>
+        </div>
+
+    </form>
+</div>
+
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>N°</th>
+            <th>NOMBRES</th>
+            <th>APELLIDOS</th>
+            <th>DNI</th>
+            <th>CÓDIGO</th>
+            <th>INGRESO</th>
+            <th>SALIDA</th>
+            <th>FECHA</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model.ListAsistenciaEstudiante)
+        {
+            <tr class="success">
+                <td>@i</td>
+                <td>@item.nombres</td>
+                <td>@item.apellidos</td>
+                <td>@item.dni</td>
+                <td>@item.codigo</td>
+                <td>@string.Format("{0:T}", item.hora_ingreso)</td>
+                <td>@string.Format("{0:T}", item.hora_salida)</td>
+                <td>@item.fecha</td>
+            </tr>
+
+            i++;
+        }
+
+    </tbody>
+
+</table>
+
