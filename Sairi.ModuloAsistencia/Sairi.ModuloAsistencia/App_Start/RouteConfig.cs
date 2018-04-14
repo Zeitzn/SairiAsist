@@ -16,7 +16,7 @@ namespace Sairi.ModuloAsistencia
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Calendario", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Calendarioo", action = "Index", id = UrlParameter.Optional }
             );
 
             //routes.MapRoute(
